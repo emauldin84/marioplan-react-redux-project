@@ -1,3 +1,6 @@
+html {
+  min-height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +9,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('/img/space.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(3,3,15);
+  min-height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+form {
+  padding: 20px;
+  margin-top: 60px; 
+}
+
+.white {
+  /* background-color: rgba(255, 255, 255, .5) !important */
+}
+
+form button, form h5 {
+  margin: 20px 0;
+}
+
+/* styles the form bottom border from default color */
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-color: #ec407a;
+  box-shadow: none;
 }
